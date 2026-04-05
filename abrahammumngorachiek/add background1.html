@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Image Example</title>
+    <style>
+        body {
+            /* Set the background image and its path */
+            background-image: url('your_image.jpg'); /* */
+            
+            /* Prevents the image from repeating */
+            background-repeat: no-repeat; /* */
+            
+            /* Scales the image to cover the entire container */
+            background-size: cover; /* */
+            
+            /* Centers the image within the container */
+            background-position: center; /* */
+            
+            /* Fixes the background image position so it doesn't scroll with the content */
+            background-attachment: fixed; /* */
+
+            /* A background color is a good fallback if the image can't be loaded */
+            background-color: #cccccc; /* */
+
+            /* Ensures content is readable by setting a text color */
+            color: white;
+            height: 100vh; /* Ensures the body covers the full viewport height */
+            margin: 0;
+            padding: 20px;
+        }
+
+        .content {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Welcome to My Web Page</h1>
+        <p>This page has a background image set using CSS properties.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Colored Table Structure</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 30px auto;
+            text-align: center;
+        }
+        td {
+            border: 2px solid black;
+            padding: 15px;
+            font-weight: bold;
+            color: white;
+        }
+
+        /* Different colors for each section */
+        .entry { background-color: #e74c3c; }
+        .parking { background-color: #3498db; }
+        .gym { background-color: #2ecc71; }
+        .library { background-color: #9b59b6; }
+        .home { background-color: #f39c12; }
+
+        .balcony { background-color: #1abc9c; }
+        .computer { background-color: #34495e; }
+        .drawing { background-color: #d35400; }
+        .music { background-color: #8e44ad; }
+
+        .dance { background-color: #16a085; }
+        .dining { background-color: #c0392b; }
+        .kitchen { background-color: #27ae60; }
+
+        .bedroom { background-color: #2980b9; }
+        .play { background-color: #f1c40f; color: black; }
+        .master { background-color: #7f8c8d; }
+        .wash { background-color: #2c3e50; }
+
+        .store { background-color: #e67e22; }
+        .exit { background-color: #000000; }
+
+    </style>
+</head>
+<body>
+
+<h2 style="text-align:center;">Colored House Layout Table</h2>
+
+<table>
+
+    <tr>
+        <td rowspan="2" class="entry">In Entry</td>
+        <td class="parking">Parking</td>
+        <td class="gym">Gym</td>
+        <td class="library">Library Room</td>
+    </tr>
+
+    <tr>
+        <td colspan="3" class="home">Home</td>
+    </tr>
+
+    <tr>
+        <td class="balcony">Balcony</td>
+        <td class="computer">Computer Room</td>
+        <td class="drawing">Drawing Room</td>
+        <td rowspan="2" class="music">Music Room</td>
+    </tr>
+
+    <tr>
+        <td class="dance">Dance Floor</td>
+        <td class="dining">Dining Area</td>
+        <td class="kitchen">Kitchen</td>
+    </tr>
+
+    <tr>
+        <td class="bedroom">Bedroom</td>
+        <td class="play">Play Room</td>
+        <td class="master">Master Bedroom</td>
+        <td rowspan="2" class="wash">Wash Area</td>
+    </tr>
+
+    <tr>
+        <td colspan="2" class="store">Store Room</td>
+        <td class="exit">Exit Out</td>
+    </tr>
+
+</table>
+
+</body>
+</html>

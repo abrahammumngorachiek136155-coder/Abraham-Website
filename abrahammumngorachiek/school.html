@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>online school election</title>
+    <style>
+        body {
+            font-family: arial;
+            background: #eef2f7;
+        }
+        .box{
+            widthL: 400px;
+            background: white;
+            padding: 20px;
+            margin: 60px auto;
+            border-radius: 10px;
+        }h2{
+            text-align: center;
+            color: #033c66;
+        }input, button{
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+        }button{
+            background: #033c66;
+            color: white;           
+            border: none;
+        }
+        }
+</style>
+</head>
+<body>
+<div class="box">
+    <h2>online school election voting</h2>
+    <form action="save_vote.php" method="post">
+        <inputtype="text" name="student_name" placeholder="student name" required>
+        <input types="text" name="class" placeholder="class /section" required>
+        <label><b>vote for caption:</b></label><br><br>
+        <input type="radio" name="candidate" value="Abraham mum ngor" required>Abraham mum ngor<br>
+        <input type="radio" name="candidate" value="Ajak Makuach">Ajak Makuach<br>
+        <input type="radio" name="candidate" value="Makur Malok">Makur Malok <br><br>
+        <button type="submit">submit vote</button>
+    </form>
+    </div>
+    </body>
+    </html>

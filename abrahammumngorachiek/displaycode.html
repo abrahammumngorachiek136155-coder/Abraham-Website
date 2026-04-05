@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Data Table with iframe</title>
+    <style>
+        table {
+            width: 60%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        iframe {
+            display: block;
+            margin: 20px auto;
+            width: 80%;
+            height: 200px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 style="text-align:center;">Student Records</h2>
+
+    <table>
+        <tr>
+            <th>Student ID</th>
+            <th>Name</th>
+            <th>View Details</th>
+        </tr>
+        <tr>
+            <td>101</td>
+            <td>Rahul</td>
+            <td><a href="student1.html" target="frame">View</a></td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>Priya</td>
+            <td><a href="student2.html" target="frame">View</a></td>
+        </tr>
+        <tr>
+            <td>103</td>
+            <td>Amit</td>
+            <td><a href="student3.html" target="frame">View</a></td>
+        </tr>
+    </table>
+
+    <!-- iframe to display student details -->
+    <iframe name="frame"></iframe>
+
+</body>
+</html>

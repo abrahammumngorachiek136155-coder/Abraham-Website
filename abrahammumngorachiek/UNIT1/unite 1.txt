@@ -1,0 +1,15 @@
+DECLARE
+  v_celsius_temp NUMBER := 25.0; -- Variable to hold the Celsius temperature, initialized to 25 degrees
+  v_fahrenheit_temp NUMBER;      -- Variable to hold the converted Fahrenheit temperature
+BEGIN
+  -- Formula to convert Celsius to Fahrenheit: (C * 9/5) + 32
+  v_fahrenheit_temp := (v_celsius_temp * 9/5) + 32;
+
+  -- Output the result
+  DBMS_OUTPUT.PUT_LINE('Temperature in Celsius: ' || v_celsius_temp || '°C');
+  DBMS_OUTPUT.PUT_LINE('Equivalent temperature in Fahrenheit: ' || v_fahrenheit_temp || '°F');
+EXCEPTION
+  WHEN OTHERS THEN
+    DBMS_OUTPUT.PUT_LINE('An error occurred: ' || SQLERRM);
+END;
+/
